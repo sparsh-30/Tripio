@@ -73,16 +73,16 @@ export default function Login() {
         theme="light"
       />
       <div style={loading === true ? override : {}}>
-        <RingLoader color="#8D448B" size={200} margin={15} loading={loading} />
+        <RingLoader color="#0B2447" size={200} margin={15} loading={loading} />
       </div>
-      <div className="w-10/12 lg:w-1/3 h-4/6 flex-col justify-center items-center bg-white shadow-2xl rounded-md py-12 px-3">
+      <div className="w-10/12 lg:w-2/5 h-4/6 flex-col justify-center items-center bg-white shadow-2xl rounded-md py-12 px-3">
         {/* Already have account component */}
         <Link to="/register">
           <div className="w-fit mx-auto cursor-pointer">
-            <div className="p-4 mb-2 bg-[#8d448b] w-fit rounded-full mx-auto">
+            <div className="p-4 mb-2 bg-[#0B2447] w-fit rounded-full mx-auto">
               <BiUser className="text-5xl text-white" />
             </div>
-            <p className="text-center text-xl text-[#8D448B] font-poppins font-bold">
+            <p className="text-center text-xl text-[#0B2447] font-poppins font-bold">
               Create a new account!
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function Login() {
               className="absolute top-3 right-4 text-2xl font-bold text-gray-600 hover:cursor-pointer"
             />
           </div>
-          <div className="flex flex-wrap justify-between text-[#8D448B] font-bold my-5">
+          <div className="flex flex-wrap justify-between text-[#0B2447] font-bold my-5">
             <div className="my-[2px]">
               <input
                 className="mr-2 h-[17px] w-[17px] relative top-1"
@@ -133,8 +133,8 @@ export default function Login() {
             onClick={handleSubmit}
             className={`w-full h-14 text-white text-xl font-bold rounded-md ${
               validator.isEmail(email) && validator.isStrongPassword(password)
-                ? "bg-[#8D448B]"
-                : "bg-[#C07ABE] pointer-events-none"
+                ? "bg-[#0B2447]"
+                : "bg-[#0b2447ae] pointer-events-none"
             }`}
           >
             Get Started
