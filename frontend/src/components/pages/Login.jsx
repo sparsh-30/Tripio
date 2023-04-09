@@ -29,7 +29,7 @@ export default function Login() {
 
   const handleSubmit = () => {
     setLoading(true);
-    fetch("http://localhost:5000/login", {
+    fetch("http://localhost:5000/loginUser", {
       method: "POST",
       body: JSON.stringify({
         email: email,

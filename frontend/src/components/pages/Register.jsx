@@ -30,7 +30,7 @@ export default function Register() {
 
   const handleSubmit = () => {
     setLoading(true);
-    fetch("http://localhost:5000/register", {
+    fetch("http://localhost:5000/registerUser", {
       method: "POST",
       body: JSON.stringify({
         email: email,
